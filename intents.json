@@ -1,0 +1,60 @@
+{
+    "intents": [
+      {"tag": "greeting",
+       "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "Hey", "Ekse", "Hi"],
+       "responses": ["Hi stranger", "Yebo yes, how can I help", "Ey watsupp", "Hola", "Hey dude", "You again"]
+      },
+      {"tag": "goodbye",
+       "patterns": ["Bye", "See you later", "Goodbye", "Ok bye", "Bye Bye"],
+       "responses": ["See you!", "Have a nice day", "Sure Bye", "Later dude", "Sayoonara", "Peace out", "Sure dude", "Ciao"]
+      },
+      {"tag": "thanks",
+       "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+       "responses": ["Happy to help!", "Any time!", "My pleasure", "You are welcome", "Sure dude"]
+      },
+      {"tag": "noanswer",
+       "patterns": [],
+       "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand", "I am still here dude"]
+       },
+       {"tag": "name",
+        "patterns": ["What is your name", "Whats your name", "Tell me your name", "Who are you", "Ungubani", "Tell me about yourself", "You are"],
+        "responses": ["I am NBot", "My name is NBot", "You can call me NB for short", "I am NBot, my friends call me NB", "NBot is my name"]
+        },
+        {"tag": "options",
+         "patterns": ["What do you do", "How can you help", "What do you know", "What is your purpose", "How can you help"],
+         "responses": ["I can tell you about Natural Language Processing", "I will clear your doubts on Natural Language Processing"]
+        },
+       {"tag": "NLP",
+        "patterns": ["What can you tell me about Natural Language Processing","what is Natural Language Processing","what is NLP","Natural Language Processing","NLP","can you tell me about Natural Language Processing", "What about Natural Language Processing", "What do you know about Natural Language Processing", "Tell me more about Natural Language Processing", "What can you tell me about natural language processing", "What do you know about NLP"],
+        "responses": ["Natural Language Processing is a field of computer science that deals with communication between computer systems and humans. It is a technique used in Artificial Intelligence and Machine Learning. It is used to create automated software that helps understand human spoken languages to extract useful information from the data it gets in the form of audio. Techniques in NLP allow computer systems to process and interpret data in the form of natural languages.","Natural language processing (NLP) refers to the branch of computer science—and more specifically, the branch of artificial intelligence or AI—concerned with giving computers the ability to understand text and spoken words in much the same way human beings can."]
+        },
+        {"tag": "Stop_words",
+            "patterns": ["What are stop words?","Stop words in nlp", "Stop words", "Any importance of Stop words"],
+            "responses": ["Stop words are said to be useless data for a search engine. Words such as articles, prepositions, etc. are considered as stop words. There are stop words such as was, were, is, am, the, a, an, how, why, and many more. In Natural Language Processing, we eliminate the stop words to understand and analyze the meaning of a sentence. The removal of stop words is one of the most important tasks for search engines. Engineers design the algorithms of search engines in such a way that they ignore the use of stop words. This helps show the relevant search result for a query.","The words which are generally filtered out before processing a natural language are called stop words. These are actually the most common words in any language (like articles, prepositions, pronouns, conjunctions, etc) and does not add much information to the text. Examples of a few stop words in English are “the”, “a”, “an”, “so”, “what”."]
+        },
+        {"tag": "removal_of_stopwords",
+            "patterns": ["Why do we remove stop words?", "what is the necessary of removing stopwords", "Necessity of removing stop words"],
+            "responses": ["Removal of stop words definitely reduces the dataset size and thus reduces the training time due to the fewer number of tokens involved in the training.\n\n We do not always remove the stop words. The removal of stop words is highly dependent on the task we are performing and the goal we want to achieve. For example, if we are training a model that can perform the sentiment analysis task, we might not remove the stop words.\nMovie review: The movie was not good at all.\nText after removal of stop words: movie good","Stop words are available in abundance in any human language. By removing these words, we remove the low-level information from our text in order to give more focus to the important information. In order words, we can say that the removal of such words does not show any negative consequences on the model we train for our task.\n\n We do not always remove the stop words. The removal of stop words is highly dependent on the task we are performing and the goal we want to achieve. For example, if we are training a model that can perform the sentiment analysis task, we might not remove the stop words.\nMovie review: The movie was not good at all.\nText after removal of stop words: movie good"]
+        },
+        {"tag": "Applications",
+            "patterns": ["What are the applications of NLP", "applications", "How NLP useful","nlp applications","what are the usecases of nlp"],
+            "responses": ["Email filters. Email filters are one of the most basic and initial applications of NLP online, Smart assistants, Search results, Predictive text, Language translation, Digital phone calls, Data analysis, Text analytics"]
+        },
+        {"tag": "TF-IDF",
+            "patterns": ["What is TF-IDF", "TF-IDF","Term Frequency-Inverse Document Frequency","TFIDF"],
+            "responses": ["TFIDF or Term Frequency-Inverse Document Frequency indicates the importance of a word in a set. It helps in information retrieval with numerical statistics. For a specific document, TF-IDF shows a frequency that helps identify the keywords in a document. The major use of TF-IDF in NLP is the extraction of useful information from crucial documents by statistical data. It is ideally used to classify and summarize the text in documents and filter out stop words.","TF-IDF (Term Frequency-Inverse Document Frequency) is a way of measuring how relevant a word is to a document in a collection of documents.\n\nThis is done by multiplying two metrics:\nTerm Frequency (TF): how many times a word appears in a document.\nInverse Document Frequency (IDF): the inverse document frequency of the word across a collection of documents. Rare words have high scores, common words have low scores.\n\nTF-IDF has many uses, such as in information retrieval, text analysis, keyword extraction, and as a way of obtaining numeric features from text for machine learning algorithms."]
+        },
+        {"tag": "Syntactic Analysis",
+            "patterns": ["What is Syntactic Analysis", "Tell me about Syntactic Analysis", "Syntactic Analysis"],
+            "responses": ["Syntactic analysis, also referred to as syntax analysis or parsing, is the process of analyzing natural language with the rules of a formal grammar. Grammatical rules are applied to categories and groups of words, not individual words. Syntactic analysis basically assigns a semantic structure to text.","Syntactic analysis is an analysis that focuses on understanding the logical meaning of sentences or of parts of sentences. While lemmatization focuses purely on feature extraction and data cleaning, syntactic analysis analyzes the relationship between words and the grammatical structure of sentences."]
+        },
+        {"tag": "Semantic Analysis",
+            "patterns": ["What is Semantic Analysis", "Tell me about Semantic Analysis", "Semantic Analysis"],
+            "responses": ["Semantic Analysis is a subfield of Natural Language Processing (NLP) that attempts to understand the meaning of Natural Language. Understanding Natural Language might seem a straightforward process to us as humans","Semantic analysis is a subfield of NLP and Machine learning that helps in understanding the context of any text and understanding the emotions that might be depicted in the sentence. This helps in extracting important information from achieving human level accuracy from the computers."]
+        },
+        {"tag": "NLTK",
+            "patterns": ["What is NLTK", "Tell me about NLTK", "NLTK"],
+            "responses": ["The Natural Language Toolkit (NLTK) is a platform used for building Python programs that work with human language data for applying in statistical natural language processing (NLP).","NLTK is a toolkit build for working with NLP in Python. It provides us various text processing libraries with a lot of test datasets. A variety of tasks can be performed using NLTK such as tokenizing, parse tree visualization, etc. "]
+        }
+    ]
+  }
