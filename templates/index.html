@@ -17,6 +17,7 @@
   <body>
     <div class="container">
       <h1>NLP Chatbot</h1>
+      <h4> Here you can clarify your doubts on NLP</h4>
       <br>
       <hr>
       <br>
@@ -59,7 +60,7 @@
                   question: $("#question").val()
               },
               success: function(result) {
-                $("#response").append("<br>Me: "+$("#question").val()+ "<br> Glocyb Bot: "+result.response);
+                $("#response").append("<br>Me: "+$("#question").val()+ "<br> NLP Bot: "+result.response);
                 $("#question").val("")
               },
               error: function(result) {
